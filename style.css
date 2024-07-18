@@ -230,12 +230,13 @@ nav .nav-list ul li a:focus {
 
 .hero-right .hero-img {
   position: relative;
+  margin-right: 57px;
 }
 
 .hero-right .hero-img .overlay1 {
   position: absolute;
   top: 154px;
-  right: -6px;
+  right: -51px;
   padding: 16px 24px;
   border-radius: 12px;
   -webkit-border-radius: 12px;
@@ -317,7 +318,21 @@ nav .nav-list ul li a:focus {
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 974px) {
+  .hero .hero-right {
+    padding-top: 70px;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 50px;
+  }
+
+  .hero .hero-right .hero-img {
+    width: 351px;
+  }
+}
+
+@media only screen and (max-width: 842px) {
   nav .nav-list ul {
     column-gap: 15px;
   }
@@ -347,7 +362,7 @@ nav .nav-list ul li a:focus {
   }
 }
 
-@media only screen and (max-width: 415px) {
+@media only screen and (max-width: 580px) {
   /* nav */
   nav {
     padding: 40px 10px;
@@ -416,8 +431,8 @@ nav .nav-list ul li a:focus {
   }
 
   .hero .hero-right .hero-img .overlay1 {
-    top: -38px;
-    right: -43px;
+    top: 54px;
+    right: -68px;
   }
 
   .hero .hero-right .hero-img .overlay2 .round {
