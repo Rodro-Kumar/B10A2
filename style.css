@@ -311,7 +311,43 @@ nav .nav-list ul li a:focus {
 
 /* responsive break points */
 
-@media only screen and (max-width: 380px) {
+@media only screen and (max-width: 1024px) {
+  .container {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  nav .nav-list ul {
+    column-gap: 15px;
+  }
+
+  nav .nav-list ul li a {
+    padding: 6px 14px;
+  }
+
+  nav .nav-list ul {
+    padding: 8px 2px;
+  }
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero .hero-left h1 {
+    font-size: 60px;
+    width: 450px;
+  }
+
+  .hero .hero-right {
+    padding-top: 70px;
+  }
+  .hero .hero-right .hero-img .overlay1 {
+    top: 62px;
+    right: -28px;
+  }
+}
+
+@media only screen and (max-width: 415px) {
   /* nav */
   nav {
     padding: 40px 10px;
