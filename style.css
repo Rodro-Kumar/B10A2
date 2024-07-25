@@ -484,6 +484,88 @@ nav .nav-list ul li a:focus {
   height: 100%;
 }
 
+/* exercise */
+.exercise {
+  padding-bottom: 100px;
+}
+.exercise-heading {
+  padding-bottom: 58px;
+}
+.exercise-heading > h3 {
+  font-size: 48px;
+  font-family: var(--Inter);
+  font-weight: 800;
+  color: white;
+}
+
+.exercise-heading > p {
+  font-size: 14px;
+  font-family: var(--Inter);
+  font-weight: 400;
+  color: white;
+  opacity: 50%;
+  padding-top: 14px;
+}
+
+.exercise .exercise-container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 403px;
+}
+
+.exercise .exercise-container .box-1 {
+  background: linear-gradient(80deg, #06ffd180, #06ffd14f),
+    url(/assets/exercise1.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: 1/4;
+  /* grid-column-start: 1;
+  grid-column-end: 4; */
+}
+.exercise .exercise-container .box-2 {
+  background: linear-gradient(80deg, #ff000052, #ff000054),
+    url(/assets/exercise2.png);
+  background-position: center;
+  background-size: cover;
+  grid-column: 4/10;
+  /* grid-column-start: 4;
+  grid-column-end: 10; */
+  background-color: yellow;
+}
+.exercise .exercise-container .box-3 {
+  background: linear-gradient(0deg, #00000077, #00000075),
+    url(/assets/exercise3.png);
+  background-position: center;
+  background-size: cover;
+  grid-column: 10/13;
+  /* grid-column-start: 10;
+  grid-column-end: 13; */
+  background-color: blue;
+}
+.exercise .exercise-container .box-4 {
+  background: linear-gradient(0deg, #00000077, #00000075),
+    url(/assets/exercise4.png);
+  background-position: center;
+  background-size: cover;
+  grid-column: -13/-8;
+  background-color: purple;
+}
+.exercise .exercise-container .box-5 {
+  background: linear-gradient(0deg, #44ff0048, #44ff0048),
+    url(/assets/exercise5.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: -8/-5;
+  background-color: yellowgreen;
+}
+.exercise .exercise-container .box-6 {
+  background: linear-gradient(0deg, #0048ff46, #0048ff46),
+    url(/assets/exercise6.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: -5/-1;
+  background-color: green;
+}
 /* responsive break points */
 
 @media only screen and (max-width: 1024px) {
