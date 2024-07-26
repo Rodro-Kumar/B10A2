@@ -56,6 +56,26 @@ body {
   margin: 0 auto;
 }
 
+/* utility */
+
+.common-title {
+  font-size: 48px;
+  color: white;
+  font-family: var(--Inter);
+  font-weight: 800;
+  padding-bottom: 12px;
+}
+
+.common-des {
+  font-size: 14px;
+  color: white;
+  font-family: var(--Inter);
+  font-weight: 400;
+  opacity: 45%;
+}
+
+/* ======= */
+
 /* ====== MAIN CSS ====== */
 
 .banner {
@@ -319,21 +339,6 @@ nav .nav-list ul li a:focus {
 .habits {
   padding-bottom: 100px;
 }
-.habits h2 {
-  color: var(--primaryColor);
-  font-size: 48px;
-  font-family: var(--Inter);
-  font-weight: 900;
-}
-
-.habits .habits-header > p {
-  color: var(--primaryColor);
-  font-size: 14px;
-  font-family: var(--Inter);
-  font-weight: 400;
-  opacity: 50%;
-  padding-top: 14px;
-}
 
 .habits .habits-header {
   display: flex;
@@ -423,20 +428,7 @@ nav .nav-list ul li a:focus {
 }
 
 .join .join-wraper .join-left > h4 {
-  color: var(--primaryColor);
-  font-size: 48px;
-  font-family: var(--Inter);
-  font-weight: 900;
   max-width: 300px;
-}
-
-.join .join-wraper .join-left > p {
-  color: var(--primaryColor);
-  font-size: 14px;
-  font-family: var(--Inter);
-  font-weight: 400;
-  opacity: 50%;
-  padding-top: 14px;
 }
 
 .join .join-wraper .join-left > button {
@@ -490,21 +482,6 @@ nav .nav-list ul li a:focus {
 }
 .exercise-heading {
   padding-bottom: 58px;
-}
-.exercise-heading > h3 {
-  font-size: 48px;
-  font-family: var(--Inter);
-  font-weight: 800;
-  color: white;
-}
-
-.exercise-heading > p {
-  font-size: 14px;
-  font-family: var(--Inter);
-  font-weight: 400;
-  color: white;
-  opacity: 50%;
-  padding-top: 14px;
 }
 
 .exercise .exercise-container {
@@ -571,7 +548,7 @@ nav .nav-list ul li a:focus {
 .exercise .exercise-container p {
   font-size: 14px;
   font-family: var(--Inter);
-  color: white;
+  color: var(--primaryColor);
   font-weight: 500;
 }
 
@@ -580,6 +557,165 @@ nav .nav-list ul li a:focus {
   bottom: 20px;
   left: 30px;
 }
+
+/* BMI Calculator */
+
+.bmi-calculator {
+  padding-bottom: 80px;
+}
+
+.bmi-calculator .bmi-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 80px;
+}
+
+.calculate {
+  background-color: #222222;
+  padding: 52px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bmi-calculator .calculate .calculate-left .calculate-left-heading {
+  font-size: 28px;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  font-weight: 800;
+  padding-bottom: 52px;
+}
+
+.calculate .calculate-left .chart {
+  max-width: 310px;
+  border-collapse: collapse;
+}
+
+.calculate .calculate-left .chart td {
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-collapse: collapse;
+}
+
+.calculate .calculate-left .chart thead td {
+  font-size: 16px;
+  font-weight: 500;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  padding: 15px 18px;
+}
+
+.calculate .calculate-left .chart tbody td {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: var(--Inter);
+  color: rgba(255, 255, 255, 0.466);
+  padding: 13px 18px;
+}
+
+.calculate .calculate-right h5 {
+  font-size: 28px;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  font-weight: 800;
+  padding-bottom: 14px;
+}
+
+.calculate .calculate-right p {
+  max-width: 500px;
+}
+
+.calculate .calculate-right .bmi-details {
+  max-width: 577px;
+  padding: 34px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+
+.calculate .calculate-right .bmi-details .Height-Weight {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+.calculate .calculate-right .bmi-details .Height-Weight input {
+  background-color: rgba(255, 255, 255, 0.185);
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  padding: 13px 20px;
+  border: none;
+  width: 100%;
+  color: var(--primaryColor);
+}
+
+.calculate .calculate-right .bmi-details .Height-Weight input::placeholder {
+  font-size: 16px;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  font-weight: 300;
+  opacity: 50%;
+}
+
+.calculate .calculate-right .bmi-details .activity select {
+  width: 100%;
+  padding: 13px 20px !important;
+  border: 0;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.185);
+  color: var(--primaryColor);
+  opacity: 50%;
+  cursor: pointer;
+  font-size: 16px;
+  font-family: var(--Inter);
+  font-weight: 400;
+}
+
+.calculate .calculate-right .bmi-details .activity select option {
+  width: 100%;
+  padding: 10px 20px;
+  border: 0;
+  font-size: 14px;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  background-color: rgb(136, 136, 136);
+  opacity: 50%;
+}
+
+.calculate .calculate-right .bmi-details button {
+  background-color: var(--buttonColor);
+  color: var(--primaryColor);
+  font-size: 18px;
+  font-family: var(--Inter);
+  font-weight: 800;
+  padding: 16px 70px;
+  border: 0;
+  border-radius: 42px;
+  -webkit-border-radius: 42px;
+  -moz-border-radius: 42px;
+  -ms-border-radius: 42px;
+  -o-border-radius: 42px;
+  transition: background-color 0.3s ease;
+  -webkit-transition: background-color 0.3s ease;
+  -moz-transition: background-color 0.3s ease;
+  -ms-transition: background-color 0.3s ease;
+  -o-transition: background-color 0.3s ease;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+.calculate .calculate-right .bmi-details button:hover {
+  background-color: #a84637;
+}
+
 /* responsive break points */
 
 @media only screen and (max-width: 1024px) {
@@ -720,6 +856,13 @@ nav .nav-list ul li a:focus {
 }
 
 @media only screen and (max-width: 580px) {
+  .common-title {
+    font-size: 30px;
+  }
+
+  .common-des {
+    font-size: 12px;
+  }
   /* nav */
   nav {
     padding: 40px 10px;
@@ -817,16 +960,12 @@ nav .nav-list ul li a:focus {
   }
 
   /* Habits */
-  .habits .habits-header h2 {
-    font-size: 30px;
-  }
 
   .habits {
     padding-top: 400px;
   }
 
   .habits .habits-header p {
-    font-size: 12px;
     text-align: center;
   }
 
