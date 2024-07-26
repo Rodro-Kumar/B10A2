@@ -716,6 +716,83 @@ nav .nav-list ul li a:focus {
   background-color: #a84637;
 }
 
+/* Team part css start */
+.team {
+  padding-bottom: 80px;
+}
+
+.team .team-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 55px;
+}
+
+.team .team-member .team-member-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  height: 600px;
+  gap: 20px;
+}
+
+.team .team-member .team-member-container .member-1 {
+  background-color: red;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+}
+.team .team-member .team-member-container .member-2 {
+  background-color: blueviolet;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+}
+.team .team-member .team-member-container .member-3 {
+  background-color: var(--buttonColor);
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+}
+.team .team-member .team-member-container .member-4 {
+  background-color: blue;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+}
+.team .team-member .team-member-container .member-5 {
+  background-color: yellow;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+}
+.team .team-member .team-member-container .member-6 {
+  background-color: purple;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
+  overflow: hidden;
+}
+/* Team part css end */
+
 /* responsive break points */
 
 @media only screen and (max-width: 1024px) {
@@ -820,6 +897,33 @@ nav .nav-list ul li a:focus {
     margin-top: 30px;
     height: 318px;
     width: 255px;
+  }
+
+  /* Calculator */
+  .bmi-calculator .bmi-heading {
+    padding-bottom: 50px;
+  }
+  .calculate {
+    flex-direction: column;
+    row-gap: 50px;
+  }
+
+  .bmi-calculator .calculate .calculate-left .calculate-left-heading {
+    font-size: 20px;
+    padding-bottom: 28px;
+  }
+
+  .calculate .calculate-right h5 {
+    font-size: 20px;
+  }
+
+  .calculate .calculate-right p {
+    font-size: 12px;
+  }
+
+  .calculate .calculate-right .bmi-details button {
+    font-size: 14px;
+    padding: 13px 50px;
   }
 }
 
@@ -1039,6 +1143,16 @@ nav .nav-list ul li a:focus {
 
   .exercise .exercise-container .box-6 {
     display: none;
+  }
+
+  /* Calculator */
+
+  .calculate .calculate-left .chart thead td {
+    font-size: 14px;
+  }
+
+  .calculate .calculate-left .chart tbody td {
+    font-size: 12px;
   }
 }
 
