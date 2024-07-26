@@ -521,6 +521,7 @@ nav .nav-list ul li a:focus {
   grid-column: 1/4;
   /* grid-column-start: 1;
   grid-column-end: 4; */
+  position: relative;
 }
 .exercise .exercise-container .box-2 {
   background: linear-gradient(80deg, #ff000052, #ff000054),
@@ -530,7 +531,7 @@ nav .nav-list ul li a:focus {
   grid-column: 4/10;
   /* grid-column-start: 4;
   grid-column-end: 10; */
-  background-color: yellow;
+  position: relative;
 }
 .exercise .exercise-container .box-3 {
   background: linear-gradient(0deg, #00000077, #00000075),
@@ -540,7 +541,7 @@ nav .nav-list ul li a:focus {
   grid-column: 10/13;
   /* grid-column-start: 10;
   grid-column-end: 13; */
-  background-color: blue;
+  position: relative;
 }
 .exercise .exercise-container .box-4 {
   background: linear-gradient(0deg, #00000077, #00000075),
@@ -548,7 +549,7 @@ nav .nav-list ul li a:focus {
   background-position: center;
   background-size: cover;
   grid-column: -13/-8;
-  background-color: purple;
+  position: relative;
 }
 .exercise .exercise-container .box-5 {
   background: linear-gradient(0deg, #44ff0048, #44ff0048),
@@ -556,7 +557,7 @@ nav .nav-list ul li a:focus {
   background-position: center;
   background-size: cover;
   grid-column: -8/-5;
-  background-color: yellowgreen;
+  position: relative;
 }
 .exercise .exercise-container .box-6 {
   background: linear-gradient(0deg, #0048ff46, #0048ff46),
@@ -564,7 +565,20 @@ nav .nav-list ul li a:focus {
   background-position: center;
   background-size: cover;
   grid-column: -5/-1;
-  background-color: green;
+  position: relative;
+}
+
+.exercise .exercise-container p {
+  font-size: 14px;
+  font-family: var(--Inter);
+  color: white;
+  font-weight: 500;
+}
+
+.exercise .exercise-container .exercise-title {
+  position: absolute;
+  bottom: 20px;
+  left: 30px;
 }
 /* responsive break points */
 
@@ -833,6 +847,10 @@ nav .nav-list ul li a:focus {
 
   /* join */
 
+  .join {
+    padding-bottom: 80px;
+  }
+
   .join .join-wraper .join-left h4 {
     font-size: 30px;
   }
@@ -849,5 +867,63 @@ nav .nav-list ul li a:focus {
     margin-top: 30px;
     height: 170px;
     width: 270px;
+  }
+
+  /* exercise */
+  .exercise-heading {
+    padding-bottom: 40px;
+  }
+  .exercise-heading > h3 {
+    font-size: 30px;
+  }
+
+  .exercise-heading > p {
+    font-size: 12px;
+  }
+  .exercise .exercise-container .box-1 {
+    grid-column: 1/6;
+  }
+
+  .exercise .exercise-container .box-2 {
+    grid-column: 6/13;
+  }
+  .exercise .exercise-container .box-3 {
+    display: none;
+  }
+  .exercise .exercise-container .box-4 {
+    grid-column: -13/-7;
+  }
+
+  .exercise .exercise-container .box-5 {
+    grid-column: -7/-1;
+  }
+
+  .exercise .exercise-container .box-6 {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  /* exercise */
+  .exercise .exercise-container .box-1 {
+    grid-column: 1/13;
+  }
+
+  .exercise .exercise-container .box-2 {
+    grid-column: -1/-13;
+  }
+  .exercise .exercise-container .box-3 {
+    display: none;
+  }
+  .exercise .exercise-container .box-4 {
+    grid-column: -13/-7;
+  }
+
+  .exercise .exercise-container .box-5 {
+    grid-column: -7/-1;
+  }
+
+  .exercise .exercise-container .box-6 {
+    display: none;
   }
 }
