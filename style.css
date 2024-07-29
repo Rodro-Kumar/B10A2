@@ -90,7 +90,6 @@ body {
 
   background-size: cover;
   background-repeat: no-repeat;
-  height: 100vh;
 }
 
 nav {
@@ -337,6 +336,7 @@ nav .nav-list ul li a:focus {
 
 /* Habits */
 .habits {
+  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -718,7 +718,7 @@ nav .nav-list ul li a:focus {
 
 /* Team part css start */
 .team {
-  padding-bottom: 80px;
+  margin-bottom: 80px;
 }
 
 .team .team-heading {
@@ -728,6 +728,16 @@ nav .nav-list ul li a:focus {
   justify-content: center;
   text-align: center;
   padding-bottom: 55px;
+}
+
+.team .team-member {
+  padding: 20px;
+  background-color: #191919;
+  border-radius: 18px;
+  -webkit-border-radius: 18px;
+  -moz-border-radius: 18px;
+  -ms-border-radius: 18px;
+  -o-border-radius: 18px;
 }
 
 .team .team-member .team-member-container {
@@ -745,51 +755,98 @@ nav .nav-list ul li a:focus {
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
   overflow: hidden;
+  background: linear-gradient(0deg, #000000af, #0048ff00),
+    url(/assets/trainer1.png);
+  background-position: center;
+  background-size: cover;
+  position: relative;
 }
 .team .team-member .team-member-container .member-2 {
-  background-color: blueviolet;
+  background: linear-gradient(0deg, #000000af, #0048ff00),
+    url(/assets/trainer2.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
   overflow: hidden;
+  position: relative;
 }
 .team .team-member .team-member-container .member-3 {
-  background-color: var(--buttonColor);
+  background: linear-gradient(0deg, #000000af, #0048ff00),
+    url(/assets/trainer3.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
   overflow: hidden;
+  position: relative;
 }
 .team .team-member .team-member-container .member-4 {
-  background-color: blue;
+  background: linear-gradient(0deg, #000000af, #0048ff00),
+    url(/assets/trainer4.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
   overflow: hidden;
+  position: relative;
 }
 .team .team-member .team-member-container .member-5 {
-  background-color: yellow;
+  background: linear-gradient(0deg, #000000af, #0048ff00),
+    url(/assets/trainer5.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
   overflow: hidden;
+  position: relative;
 }
 .team .team-member .team-member-container .member-6 {
-  background-color: purple;
+  background: linear-gradient(0deg, #000000af, #0048ff00),
+    url(/assets/trainer6.png);
+  background-position: center;
+  background-size: cover;
   border-radius: 18px;
   -webkit-border-radius: 18px;
   -moz-border-radius: 18px;
   -ms-border-radius: 18px;
   -o-border-radius: 18px;
   overflow: hidden;
+  position: relative;
+}
+
+.team .team-member .team-member-container .member-details {
+  position: absolute;
+  bottom: 15px;
+  left: 20px;
+}
+
+.team .team-member .team-member-container .member-details h5 {
+  font-size: 20px;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  font-weight: 800;
+  padding-bottom: 2px;
+}
+
+.team .team-member .team-member-container .member-details p {
+  font-size: 14px;
+  font-family: var(--Inter);
+  color: var(--primaryColor);
+  font-weight: 400;
+  opacity: 50%;
 }
 /* Team part css end */
 
@@ -799,13 +856,12 @@ nav .nav-list ul li a:focus {
   .container {
     padding: 0 10px;
   }
-  /* Habits */
-  .habits {
-    padding-top: 200px;
-  }
 }
 
 @media only screen and (max-width: 974px) {
+  .common-des {
+    max-width: 500px;
+  }
   .hero .hero-right {
     padding-top: 70px;
   }
@@ -928,10 +984,6 @@ nav .nav-list ul li a:focus {
 }
 
 @media only screen and (max-width: 768px) {
-  .habits {
-    padding-top: 290px;
-  }
-
   /* join */
 
   .join .join-wraper .join-left h4 {
@@ -954,9 +1006,6 @@ nav .nav-list ul li a:focus {
 }
 
 @media only screen and (max-width: 736px) {
-  .habits {
-    padding-top: 854px;
-  }
 }
 
 @media only screen and (max-width: 580px) {
@@ -1065,10 +1114,6 @@ nav .nav-list ul li a:focus {
 
   /* Habits */
 
-  .habits {
-    padding-top: 400px;
-  }
-
   .habits .habits-header p {
     text-align: center;
   }
@@ -1100,19 +1145,30 @@ nav .nav-list ul li a:focus {
 
   .join .join-wraper .join-left > button {
     width: 100%;
+    padding: 12px;
+    font-size: 14px;
   }
   .join .join-wraper {
     flex-direction: column;
     padding: 25px 20px;
   }
 
+  .join .join-wraper .join-right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
   .join .join-wraper .join-right .join-right-img {
     margin-top: 30px;
     height: 170px;
-    width: 270px;
+    width: 100%;
   }
 
   /* exercise */
+  .exercise {
+    padding-bottom: 70px;
+  }
   .exercise-heading {
     padding-bottom: 40px;
   }
@@ -1147,12 +1203,33 @@ nav .nav-list ul li a:focus {
 
   /* Calculator */
 
+  .bmi-calculator {
+    padding-bottom: 58px;
+  }
+
   .calculate .calculate-left .chart thead td {
     font-size: 14px;
   }
 
   .calculate .calculate-left .chart tbody td {
     font-size: 12px;
+  }
+
+  /* Team */
+  .team .team-member .team-member-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .team .team-member .team-member-container .member-details h5 {
+    font-size: 16px;
+  }
+
+  .team .team-member .team-member-container .member-details h5 {
+    font-size: 12px;
+  }
+
+  .team .team-heading {
+    padding-bottom: 40px;
   }
 }
 
@@ -1178,5 +1255,29 @@ nav .nav-list ul li a:focus {
 
   .exercise .exercise-container .box-6 {
     display: none;
+  }
+
+  /* Team */
+  .team .team-member .team-member-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team .team-member .team-member-container .member-1 {
+    height: 240px;
+  }
+  .team .team-member .team-member-container .member-2 {
+    height: 240px;
+  }
+  .team .team-member .team-member-container .member-3 {
+    height: 240px;
+  }
+  .team .team-member .team-member-container .member-4 {
+    height: 240px;
+  }
+  .team .team-member .team-member-container .member-5 {
+    height: 240px;
+  }
+
+  .team .team-member .team-member-container .member-6 {
+    height: 240px;
   }
 }
