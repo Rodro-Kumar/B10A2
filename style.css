@@ -856,6 +856,106 @@ nav .nav-list ul li a:focus {
 }
 /* Team part css end */
 
+/* Success part start */
+.success-story {
+  padding-bottom: 50px;
+}
+
+.success-story .success-heading {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.success-story .success-member-container {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 20px;
+}
+
+.success-story .success-member-container .success1 {
+  height: 340px;
+  background: linear-gradient(0deg, #000000, #0048ff00),
+    url(/assets/Success/1.webp);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.success-story .success-member-container .success2 {
+  height: 340px;
+  background: linear-gradient(0deg, #000000, #0048ff00),
+    url(/assets/Success/2.webp);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+.success-story .success-member-container .success3 {
+  height: 340px;
+  background: linear-gradient(0deg, #000000, #0048ff00),
+    url(/assets/Success/3.webp);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+.success-story .success-member-container .success4 {
+  height: 340px;
+  background: linear-gradient(0deg, #000000, #0048ff00),
+    url(/assets/Success/4.webp);
+  background-size: cover;
+  background-position: top;
+  position: relative;
+}
+
+.success-story .success-member-container .success-member-details {
+  position: absolute;
+  bottom: 16px;
+  left: 20px;
+}
+
+.success-story .success-member-container .success-member-details h5 {
+  color: var(--primaryColor);
+  font-weight: 600;
+  font-family: var(--Inter);
+  font-size: 20px;
+  padding-bottom: 5px;
+}
+
+.success-story .success-member-container .success-member-details p {
+  color: #ffffff77;
+  font-weight: 300;
+  font-family: var(--Inter);
+  font-size: 14px;
+  padding-top: 10px;
+}
+
+.success-story .success-member-container .success-member-details .rating {
+  display: flex;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.success-story .success-member-container .success-member-details .rating img {
+  width: 15px;
+}
+
+.success-story .success-member-container .success-member-details p {
+  display: flex;
+  align-items: start;
+  column-gap: 7px;
+}
+.success-story .success-member-container .success-member-details p img {
+  width: 25px;
+  transform: rotate(180deg);
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+}
+
+/* Success part end */
+
 /* footer css start */
 .footer {
   background-color: #191919;
@@ -1069,6 +1169,16 @@ nav .nav-list ul li a:focus {
     font-size: 14px;
     padding: 13px 50px;
   }
+
+  /* success storty */
+  .success-story .success-member-container .success-member-details h5 {
+    font-size: 16px;
+  }
+
+  .success-story .success-member-container .success-member-details p {
+    font-size: 12px;
+    padding-top: 8px;
+  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1089,11 +1199,14 @@ nav .nav-list ul li a:focus {
 }
 
 @media only screen and (max-width: 736px) {
+  .success-story {
+    padding-bottom: 20px;
+  }
 }
 
 @media only screen and (max-width: 580px) {
   .common-title {
-    font-size: 30px;
+    font-size: 26px;
   }
 
   .common-des {
@@ -1285,6 +1398,7 @@ nav .nav-list ul li a:focus {
 
   .calculate .calculate-left .chart thead td {
     font-size: 14px;
+    white-space: nowrap;
   }
 
   .calculate .calculate-left .chart tbody td {
@@ -1310,6 +1424,35 @@ nav .nav-list ul li a:focus {
 
   .team .team-heading {
     padding-bottom: 40px;
+  }
+
+  /* Success story */
+  .success-story .success-member-container {
+    margin-top: 50px;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+  }
+
+  .success-story .success-member-container .success-member-details h5 {
+    font-size: 14px;
+    padding-bottom: 3px;
+  }
+
+  .success-story .success-member-container .success-member-details .rating img {
+    width: 12px;
+  }
+
+  .success-story .success-member-container .success-member-details p img {
+    width: 20px;
+  }
+
+  .success-story .success-member-container .success-member-details p {
+    column-gap: 6px;
+  }
+
+  .success-story .success-member-container .success-member-details p {
+    font-size: 12px;
+    padding-top: 8px;
   }
 
   /* Footer */
@@ -1341,9 +1484,18 @@ nav .nav-list ul li a:focus {
   }
 }
 
+@media only screen and (max-width: 380px) {
+  /* Success story */
+  .success-story .success-member-container {
+    margin-top: 50px;
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 20px;
+  }
+}
+
 @media only screen and (max-width: 360px) {
   .common-title {
-    font-size: 26px;
+    font-size: 24px;
   }
   /* hero */
 
